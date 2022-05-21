@@ -21,6 +21,6 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 
 <h2>Exemplo </h2>
 + Antes<br>
-  ![alt text](https://cdn.discordapp.com/attachments/816279312591880235/977680059143954472/Screenshot_1.png) <br>
+  Eg{7,su{<s*}iruup5~?iD
 + Depois<br>
-![alt text](https://cdn.discordapp.com/attachments/816279312591880235/977680059420774410/Screenshot_2.png)
+  Can you see how infinite you are?
