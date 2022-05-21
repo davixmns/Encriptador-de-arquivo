@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Scanner arquivoEntrada = new Scanner(new FileReader("arquivos/entrada/arquivoEntrada.txt"));
+        Scanner arquivoEntrada = new Scanner(new FileReader("arquivos/entrada/entrada.txt"));
         Scanner scanner = new Scanner(System.in);
         Encriptador encriptador = new Encriptador();
 
