@@ -7,8 +7,9 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 senhas - dados - arquivos - sistemas - assinatura digital - criptomoedas
 
 <h2>Observações 👀</h2>
-**Uso** ✍️<br>
-+ Qualquer caractere UTF-8 pode ser utilizado na entrada!<br>
+**Uso** <br>
++ Qualquer caractere UTF-8 pode ser utilizado na entrada! <br>
+
 
 **Entrada** ⬇️ <br>
  + "arquivos/entrada/arquivoEntrada.txt"<br>
