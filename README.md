@@ -1,12 +1,12 @@
 ## Encriptador de arquivo.txt 📜
 
-##Definição 🗿
-> O encriptador coloca uma informação em código secreto (cifra), que só pode ser lido por quem possui a chave para desencriptar os dados.
+<h2>Definição 🗿</h2>
+O encriptador coloca uma informação em código secreto (cifra), que só pode ser lido por quem possui a chave para desencriptar os dados.
 
-##Aplicações 📎
-> senhas - dados - arquivos - sistemas - assinatura digital - criptomoedas
+<h2>Aplicações 📎</h2>
+senhas - dados - arquivos - sistemas - assinatura digital - criptomoedas
 
-##Observações 👀
+<h2>Observações 👀</h2>
 >**Uso** ✍️<br>
 Qualquer caractere UTF-8 pode ser utilizado na entrada!<br>
 
