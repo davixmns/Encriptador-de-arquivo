@@ -1,4 +1,4 @@
-#Encriptador de arquivo.txt 📜
+<h1>Encriptador de arquivo.txt 📜</h1>
 
 <h2>Definição 🗿</h2>
 O encriptador coloca uma informação em código secreto (cifra), que só pode ser lido por quem possui a chave para desencriptar os dados.
