@@ -20,7 +20,7 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 | ver descriptografado 📰️ | <kbd>"arquivos/saida/descriptografados.txt"</kbd> |
 
 <h2>Exemplo </h2>
-+ Antes
++ Antes<br>
   ![alt text](https://cdn.discordapp.com/attachments/816279312591880235/977680059143954472/Screenshot_1.png) <br>
-+ Depois
++ Depois<br>
 ![alt text](https://cdn.discordapp.com/attachments/816279312591880235/977680059420774410/Screenshot_2.png)
