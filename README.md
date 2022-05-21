@@ -10,8 +10,8 @@ senhas - dados - arquivos - sistemas - assinatura digital - criptomoedas
 
 | Objetivo | Caminho |
 | ------: | -----------: |
-| Escrever a entrada ⬇️| "arquivos/entrada/arquivoEntrada.txt"|
-| ver criptografado ⬆️ | "arquivos/saida/criptografados.txt" |
-| ver descriptografado   | "arquivos/saida/descriptografados.txt"
+| Escrever a entrada ⬇️| <sbd>"arquivos/entrada/arquivoEntrada.txt"</sbd>  |
+| ver criptografado ⬆️ | <sbd>"arquivos/saida/criptografados.txt"</sbd>    |
+| ver descriptografado   | <sbd>"arquivos/saida/descriptografados.txt"</sbd> |
 
 
