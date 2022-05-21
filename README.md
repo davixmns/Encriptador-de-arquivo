@@ -19,9 +19,6 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 | ver criptografado 🔣    | <kbd>"arquivos/saida/criptografados.txt"</kbd>    |
 | ver descriptografado 📰️ | <kbd>"arquivos/saida/descriptografados.txt"</kbd> |
 
-<h2>Exemplo </h2>
-+ Antes<br>
-![](image1.png)<br>
-+ Depois<br>
-![](image2.png)<br>
+<h2>Exemplo </h2><br>
+![](image2.png)
   
