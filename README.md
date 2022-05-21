@@ -15,6 +15,7 @@ O encriptador transforma informações em códigos secretos (cifras), que só po
 
 | **Objetivo** | **Onde** |
 | ------: | -----------: |
+| Executar | <kbd>"src/Main.java"</kbd> |
 | Escrever a entrada ✍️| <kbd>"arquivos/entrada/arquivoEntrada.txt"</kbd>  |
 | ver criptografado 🔣    | <kbd>"arquivos/saida/criptografados.txt"</kbd>    |
 | ver descriptografado 📰️ | <kbd>"arquivos/saida/descriptografados.txt"</kbd> |
