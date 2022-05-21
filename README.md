@@ -21,7 +21,7 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 
 <h2>Exemplo </h2>
 + Antes<br>
-  ![](image1.png)<br>
+![](image1.png)<br>
 + Depois<br>
-+ ![](image2.png)<br>
+![](image2.png)<br>
   
