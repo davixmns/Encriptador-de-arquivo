@@ -21,6 +21,7 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 
 <h2>Exemplo </h2>
 + Antes<br>
-  Eg{7,su{<s*}iruup5~?iD
+  ![](image1.png)<br>
 + Depois<br>
-  Can you see how infinite you are?
++ ![](image2.png)<br>
+  
