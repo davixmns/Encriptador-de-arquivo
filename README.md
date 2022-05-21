@@ -13,6 +13,6 @@ senhas - dados - arquivos - sistemas - assinatura digital - criptomoedas
  + Qualquer caractere UTF-8 pode ser utilizado na entrada!
 
 **Saidas** ⬆️<br>
- + "arquivos/saida/criptografado.txt"
- + "arquivos/saida/descriptografados.txt"
+ + "arquivos/saida/criptografado.txt" <!--- teste -->
+  + "arquivos/saida/descriptografados.txt"
 
