@@ -21,6 +21,6 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 
 <h2>Exemplo </h2>
 + Antes
-![](img_1.png)
+  ![alt text](https://cdn.discordapp.com/attachments/816279312591880235/977680059143954472/Screenshot_1.png)
 + Depois
-![](img_2.png)
+![alt text](https://cdn.discordapp.com/attachments/816279312591880235/977680059420774410/Screenshot_2.png)
