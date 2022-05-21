@@ -6,13 +6,12 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 <h2>Aplicações 📎</h2>
 senhas - dados - arquivos - sistemas - assinatura digital - criptomoedas
 
-<h2>Observações 👀</h2>
+<h2>Como usar 👀</h2>
 
-**Entrada** ⬇️ <br>
- + "arquivos/entrada/arquivoEntrada.txt"
- + Qualquer caractere UTF-8 pode ser utilizado na entrada!
+| Objetivo | Caminho |
+| ------: | -----------: |
+| Escrever a entrada ⬇️| "arquivos/entrada/arquivoEntrada.txt"|
+| ver criptografado ⬆️ | "arquivos/saida/criptografados.txt" |
+| ver descriptografado   | "arquivos/saida/descriptografados.txt"
 
-**Saidas** ⬆️<br>
- + "arquivos/saida/criptografado.txt" <kbd>//arquivo onde terá o texto criptografado</kbd>
-  + "arquivos/saida/descriptografados.txt"
 
