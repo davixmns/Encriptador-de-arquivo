@@ -7,14 +7,14 @@ O encriptador coloca uma informação em código secreto (cifra), que só pode s
 senhas - dados - arquivos - sistemas - assinatura digital - criptomoedas
 
 <h2>Observações 👀</h2>
-**Uso** <br>
-+ Qualquer caractere UTF-8 pode ser utilizado na entrada! <br>
 
+**Uso** ✍️<br>
++ Qualquer caractere UTF-8 pode ser utilizado na entrada!
 
 **Entrada** ⬇️ <br>
- + "arquivos/entrada/arquivoEntrada.txt"<br>
+ + "arquivos/entrada/arquivoEntrada.txt"
 
 **Saidas** ⬆️<br>
- + "arquivos/saida/criptografado.txt"<br>
+ + "arquivos/saida/criptografado.txt"
  + "arquivos/saida/descriptografados.txt"
 
