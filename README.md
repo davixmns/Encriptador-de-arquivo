@@ -17,7 +17,8 @@ que só podem ser lidas por quem possui as chaves para desencriptar os dados.<br
 
 O algoritmo essencial para essa implementação é o gerador de números 
 pseudo-aleatórios de Lehmer (na classe "LCG.java"). Para cada caractere 
-do arquivo é gerado um número aleatório, ao qual é armazenado em um arquivo.<br>
+do arquivo é gerado um número aleatório, ao qual é armazenado em um arquivo e serão
+como chaves para a descriptografia.<br>
 
 **Exemplo de criptografia:**<br>
 1°  decimalCaractereLido = X <br>
@@ -25,9 +26,6 @@ do arquivo é gerado um número aleatório, ao qual é armazenado em um arquivo.
 3°  novoCaractere = decimalCaractereLido + aleatorioGerado<br>
 4°  converte o novoCaractere em char e escreve no arquivo de criptografados<br>
 5°  armazena o aleatorioGerado em um arquivo de aleatorios<br><br>
-
-Na descriptografia vai ser realizado o processo inverso, os aleatórios utilizados serão
-como chaves.
 
 **Exemplo de descriptografia:**<br>
 1°  decimalCaractereCriptografado = X<br>
