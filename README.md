@@ -1,8 +1,7 @@
 <h1>Encriptador de arquivo.txt 📜</h1>
 
 <h2>Definição 🗿</h2>
-O encriptador transforma informações em códigos secretos (cifras), que só podem ser lidas por quem possui as chaves para desencriptar os dados.
-<br>
+O encriptador transforma informações em códigos secretos (cifras), que só podem ser lidas por quem possui as chaves para desencriptar os dados.<br><br>
 <h2>Aplicações 📎</h2>
 
 |  |  |
