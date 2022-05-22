@@ -25,7 +25,7 @@ como chaves para a descriptografia.<br>
 2°  aleatorioGerado = y <br>
 3°  novoCaractere = decimalCaractereLido + aleatorioGerado<br>
 4°  converte o novoCaractere em char e escreve no arquivo de criptografados<br>
-5°  armazena o aleatorioGerado em um arquivo de aleatorios<br><br>
+5°  armazena o aleatorioGerado em um arquivo de aleatorios<br>
 
 **Exemplo de descriptografia:**<br>
 1°  decimalCaractereCriptografado = X<br>
