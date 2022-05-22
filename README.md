@@ -2,7 +2,7 @@
 
 <h2>Definição 🗿</h2>
 O encriptador transforma informações em códigos secretos (cifras), que só podem ser lidas por quem possui as chaves para desencriptar os dados.
-
+<br>
 <h2>Aplicações 📎</h2>
 
 |  |  |
@@ -10,7 +10,7 @@ O encriptador transforma informações em códigos secretos (cifras), que só po
 | senhas | sistemas             |
 |  dados | assinaturas digitais |
 | arquivos | criptomoedas       |
-
+<br>
 <h2>Como usar 🤔</h2>
 
 | **Objetivo** | **Onde** |
