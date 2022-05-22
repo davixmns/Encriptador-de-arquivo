@@ -22,5 +22,5 @@ O encriptador transforma informações em códigos secretos (cifras), que só po
 
 <h2>Exemplo </h2><br>
 <img align="center" alt="image1" height="50" width="1100" src="https://cdn.discordapp.com/attachments/816279312591880235/977680059143954472/Screenshot_1.png"><br>
-<img align="center" alt="image2" height="50" width="1100" src="https://https://cdn.discordapp.com/attachments/816279312591880235/977680059420774410/Screenshot_2.png">
+<img align="center" alt="image2" height="50" width="1100" src="https://cdn.discordapp.com/attachments/816279312591880235/977680059420774410/Screenshot_2.png">
   
