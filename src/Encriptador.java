@@ -35,6 +35,7 @@ public class Encriptador {
             printWriter2.println();
             aleatoriosUsados = new ArrayList<>();
         }
+
         printWriter1.close();
         printWriter2.close();
         System.out.println("Tarefa concluida!\n");
