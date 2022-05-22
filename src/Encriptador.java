@@ -15,7 +15,7 @@ public class Encriptador {
         int valorMax;
         while (arquivoEntrada.hasNextLine()) {
             String linha = arquivoEntrada.nextLine();
-            valorMax = linha.length();
+            valorMax = linha.length() + 100;
 
             for (int i = 0; i < linha.length(); i++) {
                 int aleatorio;

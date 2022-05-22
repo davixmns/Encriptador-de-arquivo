@@ -21,6 +21,6 @@ O encriptador transforma informações em códigos secretos (cifras), que só po
 | ver descriptografado 📰️ | <kbd>"arquivos/saida/descriptografado.txt"</kbd> |
 
 <h2>Exemplo </h2><br>
-![](imagens/image1.png)
-![](imagens/image2.png)
+![](arquivos/imagens/image1.png)
+![](arquivos/imagens/image2.png)
   
