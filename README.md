@@ -31,7 +31,7 @@ como chaves para a descriptografia.<br>
 1°  decimalCaractereCriptografado = X<br>
 2°  aleatorioUsado = Y<br>
 3°  caractereOriginal = decimalCaractereCriptografado - aleatorioUsado<br>
-4°  Converte o caractereOriginal em char e armazena no arquivo de descriptografados<br><br>
+4°  Converte o caractereOriginal em char e armazena no arquivo de descriptografados<br>
 
 O arquivo de aleatórios deve ser guardado em total segurança, pois sem eles não é possível realizar
 a descriptografia.<br><br>
