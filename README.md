@@ -19,8 +19,8 @@ O encriptador transforma informações em códigos secretos (cifras), que só po
 | Escrever a entrada ✍️| <kbd>"arquivos/entrada/entrada.txt"</kbd>  |
 | ver criptografado 🔣    | <kbd>"arquivos/saida/criptografado.txt"</kbd>    |
 | ver descriptografado 📰️ | <kbd>"arquivos/saida/descriptografado.txt"</kbd> |
-
-<h2>Exemplo </h2><br>
+<br>
+<h2>Exemplo </h2>
 
 - Antes<br><br>
 <img align="center" alt="image2" height="50" width="500" src="https://cdn.discordapp.com/attachments/816279312591880235/977680059420774410/Screenshot_2.png"><br><br>
