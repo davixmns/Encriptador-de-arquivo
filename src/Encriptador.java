@@ -46,16 +46,13 @@ public class Encriptador {
         BufferedReader arqCriptografado = new BufferedReader(new FileReader("arquivos/saida/criptografado.txt"));
         Scanner arqAleatorios = new Scanner(new FileReader("arquivos/lcg/aleatorios.txt"));
         PrintWriter arqDescriptografado = new PrintWriter(new FileWriter("arquivos/saida/descriptografado.txt"));
-        String[] vetorAleatorios;
 
         String linha = arqCriptografado.readLine();
         while (arqAleatorios.hasNextLine() && linha != null) {
-            vetorAleatorios = arqAleatorios.nextLine().split(" ");
+            String[] vetorAleatorios = arqAleatorios.nextLine().split(" ");
 
             for (int i = 0; i < linha.length(); i++) {
-                int decimal = linha.charAt(i);
-                int aleatorio = Integer.parseInt(vetorAleatorios[i]);
-                char letra = (char) (decimal - aleatorio);
+                char letra = (char)(linha.charAt(i) - Integer.parseInt(vetorAleatorios[i]));
                 arqDescriptografado.print(letra);
             }
 
