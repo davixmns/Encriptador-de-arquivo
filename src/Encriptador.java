@@ -1,67 +1,78 @@
 import java.io.*;
-import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Encriptador {
+
+    private final BufferedReader leitorDeCriptografado;
+    private final Scanner leitorDeAleatorios;
+    private final PrintWriter escritorDeDescriptografado;
+    private final PrintWriter escritorDeCriptografato;
+    private final PrintWriter escritorDeAleatorios;
+
+    public Encriptador() throws IOException {
+        this.leitorDeCriptografado = new BufferedReader(new FileReader("arquivos/saida/criptografado.txt"));
+        this.escritorDeCriptografato = new PrintWriter(new FileWriter("arquivos/saida/criptografado.txt"));
+        this.leitorDeAleatorios = new Scanner(new FileReader("arquivos/lcg/aleatorios.txt"));
+        this.escritorDeAleatorios = new PrintWriter(new FileWriter("arquivos/lcg/aleatorios.txt"));
+        this.escritorDeDescriptografado = new PrintWriter(new FileWriter("arquivos/saida/descriptografado.txt"));
+    }
+
     public void criptografar(Scanner arquivoEntrada) throws IOException {
         System.out.println("Iniciando proceso de criptografia...");
-        PrintWriter printWriter1 = new PrintWriter(new FileWriter("arquivos/saida/criptografado.txt"));
-        PrintWriter printWriter2 = new PrintWriter(new FileWriter("arquivos/lcg/aleatorios.txt"));
+
         LCG lcg = new LCG();
         ArrayList<Integer> aleatoriosUsados = new ArrayList<>();
 
         int valorMin = 0;
         int valorMax;
+
         while (arquivoEntrada.hasNextLine()) {
             String linha = arquivoEntrada.nextLine();
             valorMax = linha.length() + 100;
 
             for (int i = 0; i < linha.length(); i++) {
-                int aleatorio;
-                while (true) {
-                    aleatorio = lcg.randomInt(valorMin, valorMax);
+                int aleatorio = lcg.randomInt(valorMin, valorMax);
 
-                    if (!aleatoriosUsados.contains(aleatorio)) {
-                        aleatoriosUsados.add(aleatorio);
-                        break;
-                    }
+                while (aleatoriosUsados.contains(aleatorio)){
+                    aleatorio = lcg.randomInt(valorMin, valorMax);
                 }
-                printWriter2.printf(aleatorio + " ");
-                char caractere = (char) (linha.charAt(i) + aleatorio);
-                printWriter1.print(caractere);
+
+                aleatoriosUsados.add(aleatorio);
+                this.escritorDeAleatorios.printf(aleatorio + " ");
+                this.escritorDeCriptografato.print((char) (linha.charAt(i) + aleatorio));
             }
-            printWriter1.println();
-            printWriter2.println();
+
+            this.escritorDeCriptografato.println();
+            this.escritorDeAleatorios.println();
             aleatoriosUsados = new ArrayList<>();
         }
 
-        printWriter1.close();
-        printWriter2.close();
+        this.escritorDeCriptografato.close();
+        this.escritorDeAleatorios.close();
         System.out.println("Tarefa concluida!\n");
     }
 
     public void descriptografar() throws IOException {
         System.out.println("\nIniciando processo de descriptografia...");
-        BufferedReader arqCriptografado = new BufferedReader(new FileReader("arquivos/saida/criptografado.txt"));
-        Scanner arqAleatorios = new Scanner(new FileReader("arquivos/lcg/aleatorios.txt"));
-        PrintWriter arqDescriptografado = new PrintWriter(new FileWriter("arquivos/saida/descriptografado.txt"));
 
-        String linha = arqCriptografado.readLine();
-        while (arqAleatorios.hasNextLine() && linha != null) {
-            String[] vetorAleatorios = arqAleatorios.nextLine().split(" ");
+        String linha = this.leitorDeCriptografado.readLine();
+
+        while (leitorDeAleatorios.hasNextLine() && linha != null) {
+            String[] vetorDeAleatorios = this.leitorDeAleatorios.nextLine().split(" ");
 
             for (int i = 0; i < linha.length(); i++) {
-                char letra = (char)(linha.charAt(i) - Integer.parseInt(vetorAleatorios[i]));
-                arqDescriptografado.print(letra);
+                char letra = (char)(linha.charAt(i) - Integer.parseInt(vetorDeAleatorios[i]));
+                this.escritorDeDescriptografado.print(letra);
             }
 
-            arqDescriptografado.println();
-            linha = arqCriptografado.readLine();
+            this.escritorDeDescriptografado.println();
+            linha = this.leitorDeCriptografado.readLine();
         }
-        arqDescriptografado.close();
-        arqCriptografado.close();
-        arqAleatorios.close();
+
+        this.escritorDeDescriptografado.close();
+        this.leitorDeCriptografado.close();
+        this.leitorDeAleatorios.close();
         System.out.println("Tarefa concluida!");
     }
 }
