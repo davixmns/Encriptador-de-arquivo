@@ -18,7 +18,7 @@ public class Encriptador {
         this.escritorDeDescriptografado = new PrintWriter(new FileWriter("arquivos/saida/descriptografado.txt"));
     }
 
-    public void criptografar(Scanner arquivoEntrada) throws IOException {
+    public void criptografar(Scanner arquivoEntrada) {
         System.out.println("Iniciando proceso de criptografia...");
 
         LCG lcg = new LCG();
