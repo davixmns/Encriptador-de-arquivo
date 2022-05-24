@@ -29,7 +29,7 @@ public class Encriptador {
 
         while (arquivoEntrada.hasNextLine()) {
             String linha = arquivoEntrada.nextLine();
-            valorMax = linha.length() + 100;
+            valorMax = linha.length() + 150;
 
             for (int i = 0; i < linha.length(); i++) {
                 int aleatorio = lcg.randomInt(valorMin, valorMax);
@@ -42,7 +42,7 @@ public class Encriptador {
                 this.escritorDeAleatorios.printf(aleatorio + " ");
                 this.escritorDeCriptografato.print((char) (linha.charAt(i) + aleatorio));
             }
-
+            System.out.print(".");
             this.escritorDeCriptografato.println();
             this.escritorDeAleatorios.println();
             aleatoriosUsados = new ArrayList<>();
