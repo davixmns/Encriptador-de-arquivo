@@ -21,5 +21,12 @@ public class LCG { //Gerador Linear Congruente
         }
         return (minValue + (((int) xn) % limit));
     }
+
+    public static void main(String[] args) {
+        LCG l = new LCG();
+        for (int i = 0; i < 100; i++){
+            System.out.println(l.randomInt(0, 255));
+        }
+    }
 }
 

@@ -25,11 +25,10 @@ public class Encriptador {
         ArrayList<Integer> aleatoriosUsados = new ArrayList<>();
 
         int valorMin = 0;
-        int valorMax;
+        int valorMax = 1000;
 
         while (arquivoEntrada.hasNextLine()) {
             String linha = arquivoEntrada.nextLine();
-            valorMax = linha.length() + 150;
 
             for (int i = 0; i < linha.length(); i++) {
                 int aleatorio = lcg.randomInt(valorMin, valorMax);
