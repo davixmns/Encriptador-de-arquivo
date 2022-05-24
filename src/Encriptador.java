@@ -13,12 +13,12 @@ public class Encriptador {
     public Encriptador() throws IOException {
         this.leitorDeCriptografado = new BufferedReader(new FileReader("arquivos/saida/criptografado.txt"));
         this.escritorDeCriptografato = new PrintWriter(new FileWriter("arquivos/saida/criptografado.txt"));
-        this.leitorDeAleatorios = new Scanner(new FileReader("arquivos/lcg/aleatorios.txt"));
-        this.escritorDeAleatorios = new PrintWriter(new FileWriter("arquivos/lcg/aleatorios.txt"));
+        this.leitorDeAleatorios = new Scanner(new FileReader("arquivos/saida/lcg/aleatorios.txt"));
+        this.escritorDeAleatorios = new PrintWriter(new FileWriter("arquivos/saida/lcg/aleatorios.txt"));
         this.escritorDeDescriptografado = new PrintWriter(new FileWriter("arquivos/saida/descriptografado.txt"));
     }
 
-    public void criptografar(Scanner arquivoEntrada) {
+    public void criptografar(Scanner arquivoEntrada, String caminhoEntrada) throws FileNotFoundException {
         System.out.println("Iniciando proceso de criptografia...");
 
         LCG lcg = new LCG();
@@ -26,6 +26,8 @@ public class Encriptador {
 
         int valorMin = 0;
         int valorMax = 1000;
+        int nLinhas = Carregamento.contarLinhas(caminhoEntrada);
+        int linhaAtual = 0;
 
         while (arquivoEntrada.hasNextLine()) {
             String linha = arquivoEntrada.nextLine();
@@ -33,7 +35,7 @@ public class Encriptador {
             for (int i = 0; i < linha.length(); i++) {
                 int aleatorio = lcg.randomInt(valorMin, valorMax);
 
-                while (aleatoriosUsados.contains(aleatorio)){
+                while (aleatoriosUsados.contains(aleatorio)) {
                     aleatorio = lcg.randomInt(valorMin, valorMax);
                 }
 
@@ -41,7 +43,8 @@ public class Encriptador {
                 this.escritorDeAleatorios.printf(aleatorio + " ");
                 this.escritorDeCriptografato.print((char) (linha.charAt(i) + aleatorio));
             }
-            System.out.print(".");
+            System.out.println(Carregamento.porcentagem(linhaAtual, nLinhas) + "%");
+            linhaAtual++;
             this.escritorDeCriptografato.println();
             this.escritorDeAleatorios.println();
             aleatoriosUsados = new ArrayList<>();
@@ -61,7 +64,7 @@ public class Encriptador {
             String[] vetorDeAleatorios = this.leitorDeAleatorios.nextLine().split(" ");
 
             for (int i = 0; i < linha.length(); i++) {
-                char letra = (char)(linha.charAt(i) - Integer.parseInt(vetorDeAleatorios[i]));
+                char letra = (char) (linha.charAt(i) - Integer.parseInt(vetorDeAleatorios[i]));
                 this.escritorDeDescriptografado.print(letra);
             }
 

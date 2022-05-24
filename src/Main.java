@@ -25,7 +25,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             Encriptador encriptador = new Encriptador();
 
-            encriptador.criptografar(arquivoEntrada);
+            encriptador.criptografar(arquivoEntrada, caminhoEntrada);
             java.awt.Desktop.getDesktop().open(new File("arquivos/saida/criptografado.txt"));
 
             System.out.println("deseja descriptografar? (1-sim) (2-nao)");
