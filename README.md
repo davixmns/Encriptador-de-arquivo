@@ -53,5 +53,5 @@ a descriptografia.<br><br>
 <img align="center" alt="image2" height="50" width="500" src="https://cdn.discordapp.com/attachments/816279312591880235/977680059420774410/Screenshot_2.png"><br><br>
 
 - Depois<br><br>
-<img align="center" alt="image1" height="50" width="500" src="https://cdn.discordapp.com/attachments/816279312591880235/977680059143954472/Screenshot_1.png"><br><br>
+<img align="center" alt="image1" height="50" width="500" src="https://media.discordapp.net/attachments/978763784179036285/980832570533109831/Screenshot_1.png"><br><br>
 
