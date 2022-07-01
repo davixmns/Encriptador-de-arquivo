@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
@@ -28,7 +27,6 @@ public class Encriptador {
         int linhaAtual = 0;
 
         while (arquivoDeEntrada.hasNextLine()) {
-            ArrayList<Integer> aleatoriosUsados = new ArrayList<>();
             StringBuilder linhaCriptografada = new StringBuilder();
             StringBuilder linhaAleatorios = new StringBuilder();
 

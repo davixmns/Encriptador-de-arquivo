@@ -16,7 +16,7 @@ que só podem ser lidas por quem possui as chaves para desencriptar os dados.<br
 <h2>Implementação 💭️ </h2>
 
 O algoritmo essencial para essa implementação é o gerador de números 
-pseudo-aleatórios de Lehmer (na classe "LCG.java"). Para cada caractere 
+pseudo-aleatórios da classe Random do Java. Para cada caractere 
 do arquivo é gerado um número aleatório, ao qual é armazenado em um arquivo e serão
 como chaves para a descriptografia.<br>
 
