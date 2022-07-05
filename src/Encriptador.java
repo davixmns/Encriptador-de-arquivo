@@ -22,17 +22,22 @@ public class Encriptador {
         System.out.println("Iniciando proceso de criptografia...");
         Random random = new Random();
 
-        int valorMax = 255; //UTF-8
+        int valorMax = 32768; //15 bits
         int nLinhas = Carregamento.contarLinhas(caminhoDoArquivoDeEntrada);
         int linhaAtual = 0;
 
         while (arquivoDeEntrada.hasNextLine()) {
+            ArrayList<Integer> aleatorios = new ArrayList<>();
             StringBuilder linhaCriptografada = new StringBuilder();
             StringBuilder linhaAleatorios = new StringBuilder();
 
             String linha = arquivoDeEntrada.nextLine();
             for (int i = 0; i < linha.length(); i++) {
                 int aleatorio = random.nextInt(valorMax);
+                while (aleatorios.contains(aleatorio)) {
+                    aleatorio = random.nextInt(valorMax);
+                }
+                aleatorios.add(aleatorio);
                 linhaAleatorios.append(aleatorio).append(" ");
                 linhaCriptografada.append((char) (linha.charAt(i) + aleatorio));
             }
@@ -54,9 +59,11 @@ public class Encriptador {
             StringBuilder linhaDescriptografada = new StringBuilder();
             String[] vetorDeAleatorios = this.leitorDeAleatorios.readLine().split(" ");
             String linhaCriptografada = this.leitorDeCriptografado.readLine();
+
             for (int i = 0; i < linhaCriptografada.length(); i++) {
                 linhaDescriptografada.append((char)((int) linhaCriptografada.charAt(i) - Integer.parseInt(vetorDeAleatorios[i])));
             }
+
             this.escritorDeDescriptografado.println(linhaDescriptografada);
         }
 
